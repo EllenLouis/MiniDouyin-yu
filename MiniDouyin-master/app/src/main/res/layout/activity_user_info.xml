@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/color_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorOrange"/>
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:text="登录界面"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/avatar"
+        android:layout_below="@id/avatar"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/colorOrangeDeep"
+        android:layout_marginBottom="8dp"
+        android:text="@string/ID" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorOrangeDeep"
+        android:text="@string/Name"
+        android:layout_below="@id/ID"
+        android:layout_alignLeft="@id/ID"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+
+
+    <FrameLayout
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/color_bar"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/avatar_iamge"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/icon" />
+        <Button
+            android:id="@+id/change_avatar"
+            android:background="@drawable/add_avatar"
+            android:layout_gravity="right|bottom"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            tools:visibility="visible" />
+
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/ID"
+        android:ems="5"
+        android:hint="请输入数字" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/Name"
+        android:ems="5"
+        android:hint="请输入姓名" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/my_button_bg"
+        android:textColor="@color/colorOrange"
+        android:text="提交" />
+    <View
+        android:id="@+id/color_below"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorOrange"/>
+</RelativeLayout>

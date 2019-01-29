@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MiniDouyin</string>
+    <string name="ID">学号</string>
+    <string name="Name">姓名</string>
+</resources>
